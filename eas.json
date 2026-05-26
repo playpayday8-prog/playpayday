@@ -28,19 +28,26 @@
       "android": {
         "buildType": "aab",
         "releaseChannel": "production",
-        "withoutCredentials": false
+        "withoutCredentials": false,
+        "env": {
+          "ADMOB_APP_ID": "ca-app-pub-4526797252883711~YOUR_APP_ID",
+          "FIREBASE_PROJECT_ID": "playpayday-YOUR_PROJECT"
+        }
       },
       "ios": {
         "buildType": "archive",
         "releaseChannel": "production",
-        "withoutCredentials": false
+        "withoutCredentials": false,
+        "env": {
+          "ADMOB_APP_ID": "ca-app-pub-4526797252883711~YOUR_APP_ID"
+        }
       }
     }
   },
   "submit": {
     "production": {
       "android": {
-        "serviceAccount": "path/to/your/service-account-key.json",
+        "serviceAccount": "service-account-key.json",
         "track": "internal"
       },
       "ios": {
