@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "PlayPayDay",
+    "slug": "playpayday",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#09090b"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTabletOnly": false,
+      "bundleIdentifier": "com.playpayday.app",
+      "buildNumber": "1.0.0",
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#09090b"
+      },
+      "package": "com.playpayday.mobile",
+      "versionCode": 1,
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.CHANGE_NETWORK_STATE"
+      ],
+      "googleServicesFile": "./google-services.json"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "@capacitor-community/admob",
+        {
+          "appId": "ca-app-pub-4526797252883711~YOUR_APP_ID",
+          "rewardedAdId": "ca-app-pub-4526797252883711/4114761596",
+          "interstitialAdId": "ca-app-pub-4526797252883711/YOUR_INTERSTITIAL_ID",
+          "bannerId": "ca-app-pub-4526797252883711/YOUR_BANNER_ID"
+        }
+      ],
+      "@react-native-firebase/app",
+      "@react-native-firebase/analytics"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "YOUR_EAS_PROJECT_ID"
+      }
+    }
+  }
+}
